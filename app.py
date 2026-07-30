@@ -38,7 +38,7 @@ model = load_model()
 def load_data():
 
     df = pd.read_csv(
-        "data/dataset_cabe_rawit_merah.csv",
+        "data/cabe_rawit_merah_lag1.csv",
         parse_dates=["tanggal_lengkap"]
     )
 
