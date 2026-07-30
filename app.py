@@ -549,8 +549,6 @@ def recursive_forecast(model, df, target_date, harga_awal = None):
 
         X = np.array([[
 
-            hari_ke,
-
             lag1,
 
         ]])
@@ -562,8 +560,6 @@ def recursive_forecast(model, df, target_date, harga_awal = None):
         # ==========================
 
         row = pd.DataFrame({
-
-            "hari_ke":[hari_ke],
 
             "tanggal_lengkap":[next_date],
 
