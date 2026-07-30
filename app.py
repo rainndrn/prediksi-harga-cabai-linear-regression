@@ -519,7 +519,7 @@ if selected=="Visualisasi":
 # RECURSIVE FORECAST
 # ==========================================
 
-def recursive_forecast(model, df, target_date, harga_awal = none):
+def recursive_forecast(model, df, target_date, harga_awal = None):
 
     df_forecast = df.copy().sort_values("tanggal_lengkap").reset_index(drop=True)
 
