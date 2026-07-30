@@ -535,8 +535,6 @@ def recursive_forecast(model, df, target_date, harga_awal = None):
 
         next_date = current_date + pd.Timedelta(days=1)
 
-        hari_ke = last["hari_ke"] + 1
-
         # ==========================
         # Membentuk variabel lag
         # ==========================
